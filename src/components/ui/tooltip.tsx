@@ -3,11 +3,11 @@
 import * as React from 'react'
 import * as TooltipPrimitive from '@radix-ui/react-tooltip'
 
-import { cn } from '@/lib/utils'
+import { cn } from '~/lib/utils'
 import { cva } from 'class-variance-authority'
 
 const tooltipVariants = cva(
-    'z-50 mt-2 flex flex-row items-center gap-2 overflow-hidden rounded-md border shadow-md animate-in fade-in-50 ' +
+    'z-50 flex gap-1.5 items-center overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md animate-in fade-in-50 ' +
         'data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1',
     {
         variants: {
@@ -29,8 +29,7 @@ const tooltipVariants = cva(
 
 const TooltipProvider = TooltipPrimitive.Provider
 
-const Tooltip = ({ ...props }) => <TooltipPrimitive.Root {...props} />
-Tooltip.displayName = TooltipPrimitive.Tooltip.displayName
+const Tooltip = TooltipPrimitive.Root
 
 const TooltipTrigger = TooltipPrimitive.Trigger
 

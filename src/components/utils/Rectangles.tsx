@@ -78,11 +78,11 @@ const Rectangles = ({ className }: { className: string }) => {
                         gradientUnits='userSpaceOnUse'
                         gradientTransform='translate(614 139.5) rotate(90.1317) scale(217.501 747.544)'
                     >
-                        <stop stop-color='#D7D7D7' stop-opacity='0.2'></stop>
+                        <stop stopColor='#D7D7D7' stopOpacity='0.2'></stop>
                         <stop
                             offset='0.522644'
-                            stop-color='#D9D9D9'
-                            stop-opacity='0'
+                            stopColor='#D9D9D9'
+                            stopOpacity='0'
                         ></stop>
                     </radialGradient>
                 </defs>

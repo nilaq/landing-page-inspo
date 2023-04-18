@@ -1,13 +1,13 @@
 import React, { HTMLAttributes } from 'react'
-import Title from '~/components/ui/typography/Title'
-import Emoji from '~/components/ui/typography/Emoji'
-import Subtle from '~/components/ui/typography/Subtle'
-import Subtlest from '~/components/ui/typography/Subtlest'
-import Heading from '~/components/ui/typography/Heading'
-import Text from '~/components/ui/typography/Text'
-import Button from '~/components/ui/buttons/Button'
+import Title from './ui/typography/Title'
+import Emoji from './ui/typography/Emoji'
+import Subtle from './ui/typography/Subtle'
+import Subtlest from './ui/typography/Subtlest'
+import Heading from './ui/typography/Heading'
+import Text from './ui/typography/Text'
+import { Button } from './ui/button'
 import { cn } from '~/lib/utils'
-import { Checkbox, CheckboxWithText } from '~/components/ui/checkbox/Checkbox'
+import { Checkbox, CheckboxWithText } from './ui/checkbox'
 
 const Components = () => {
     const Element: React.FC<HTMLAttributes<HTMLHeadingElement>> = ({

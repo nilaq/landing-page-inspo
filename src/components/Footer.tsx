@@ -1,6 +1,6 @@
 import React from 'react'
 import Text from '~/components/ui/typography/Text'
-import Button from '~/components/ui/buttons/Button'
+import { Button } from '~/components/ui/button'
 import { FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
@@ -50,7 +50,7 @@ const Footer = () => {
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
         >
-            <g clip-path='url(#clip0_24_57)'>
+            <g clipPath='url(#clip0_24_57)'>
                 <rect width='24' height='24' rx='5.4' fill='#FF5100'></rect>
                 <rect
                     x='0.5'
@@ -72,7 +72,7 @@ const Footer = () => {
                 height='23'
                 rx='4.9'
                 stroke='#FF5100'
-                stroke-opacity='0.1'
+                strokeOpacity='0.1'
             ></rect>
             <rect
                 x='0.5'
@@ -91,11 +91,11 @@ const Footer = () => {
                     gradientUnits='userSpaceOnUse'
                     gradientTransform='translate(7.35) rotate(58.475) scale(34.1384)'
                 >
-                    <stop stop-color='white' stop-opacity='0.56'></stop>
+                    <stop stopColor='white' stopOpacity='0.56'></stop>
                     <stop
                         offset='0.28125'
-                        stop-color='white'
-                        stop-opacity='0'
+                        stopColor='white'
+                        stopOpacity='0'
                     ></stop>
                 </radialGradient>
                 <clipPath id='clip0_24_57'>

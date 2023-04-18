@@ -1,14 +1,14 @@
 import React from 'react'
 import Title from '~/components/ui/typography/Title'
 import Text from '~/components/ui/typography/Text'
-import Button from '~/components/ui/buttons/Button'
+import { Button } from '~/components/ui/button'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from '~/components/ui/tooltip/Tooltip'
+} from '~/components/ui/tooltip'
 import RequestAccess from '~/components/RequestAccess'
 
 const Header = () => {

@@ -4,8 +4,8 @@ import {
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from '~/components/ui/tooltip/Tooltip'
-import Button from '~/components/ui/buttons/Button'
+} from '~/components/ui/tooltip'
+import { Button } from '~/components/ui/button'
 import Text from '~/components/ui/typography/Text'
 import Key from '~/components/utils/Key'
 import {
@@ -16,9 +16,9 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from '~/components/ui/dialog/Dialog'
-import { Label } from '~/components/ui/label/Label'
-import { Input } from '~/components/ui/input/Input'
+} from '~/components/ui/dialog'
+import { Label } from '~/components/ui/label'
+import { Input } from '~/components/ui/input'
 import Title from '~/components/ui/typography/Title'
 import Heading from '~/components/ui/typography/Heading'
 

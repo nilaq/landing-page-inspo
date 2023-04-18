@@ -8,12 +8,11 @@ import Rectangles from '~/components/utils/Rectangles'
 
 const LandingPage = () => {
     return (
-        <div className='dark flex min-h-screen w-full flex-row justify-center bg-[#05050a] antialiased selection:bg-[#00fde01b] selection:text-[#2cffd1cb]'>
+        <div className='flex min-h-screen w-full flex-row justify-center bg-background antialiased selection:bg-[#00fde01b] selection:text-[#2cffd1cb] dark:bg-[#05050a]'>
             <div className='relative z-10 flex h-screen w-full max-w-5xl flex-col justify-between px-4 sm:px-8 md:max-w-7xl'>
                 <Header></Header>
                 <div className='flex w-full flex-row items-center justify-between'>
                     <HeroText></HeroText>
-                    <Cube></Cube>
                 </div>
                 <Footer></Footer>
             </div>
