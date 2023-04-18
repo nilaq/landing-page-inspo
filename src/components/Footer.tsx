@@ -123,11 +123,11 @@ const Footer = () => {
                     Backed by
                 </Text>
                 {YCombinatorIcon}
-                <Text className='bg-gradient-to-br from-white to-[#e7f3ff78] bg-clip-text text-sm font-bold dark:text-transparent'>
+                <Text className='hidden bg-gradient-to-br from-white to-[#e7f3ff78] bg-clip-text text-sm font-bold dark:text-transparent sm:inline-flex'>
                     Combinator
                 </Text>
             </div>
-            <div className='flex flex-row items-center justify-end gap-5'>
+            <div className='hidden flex-row items-center justify-end gap-5 sm:flex'>
                 <Button
                     variant='nav'
                     className='m-0 items-end p-0 text-[14px] font-normal'

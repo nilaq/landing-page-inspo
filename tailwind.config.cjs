@@ -21,10 +21,9 @@ module.exports = {
         'header-slide-down-fade': 'header-slide-down-fade 1s ease-in-out',
         'footer-slide-up-fade': 'footer-slide-up-fade 1s ease-in-out',
         'hero-slide-up-fade': 'hero-slide-up-fade 1s ease-in-out',
-        'open-scale-up-fade': 'open-scale-up-fade 1.5s ease-in-out',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "webgl-scale-in-fade": "webgl-scale-in-fade 1s ease-in-out"
+        "webgl-scale-in-fade": "webgl-scale-in-fade 1.5s ease-in-out"
       },
       keyframes: {
         'header-slide-down-fade': {
@@ -60,7 +59,7 @@ module.exports = {
         'webgl-scale-in-fade': {
           '0%': {
             opacity: 0,
-            transform: 'scale(.7)'
+            transform: 'scale(.5)'
           },
           '100%': {
             opacity: 1,
