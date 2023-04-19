@@ -9,9 +9,12 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '~/components/ui/tooltip'
-import RequestAccess from '~/components/RequestAccess'
+import RequestAccessDialog from '~/components/RequestAccess'
+import { useDarkMode } from 'next-dark-mode'
 
 const Header = () => {
+    const { darkModeActive } = useDarkMode()
+
     const key = char => {
         return (
             <span
@@ -71,7 +74,14 @@ const Header = () => {
                     Blog
                 </Button>
                 {signInButton}
-                <RequestAccess buttonClassName='hidden sm:inline-flex'></RequestAccess>
+                <RequestAccessDialog>
+                    <Button
+                        variant={darkModeActive ? 'glow' : 'secondary'}
+                        className='hidden sm:inline-flex'
+                    >
+                        Request access
+                    </Button>
+                </RequestAccessDialog>
             </div>
         </header>
     )

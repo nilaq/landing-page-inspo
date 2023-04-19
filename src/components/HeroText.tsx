@@ -8,13 +8,13 @@ const HeroText = () => {
     return (
         <div className='z-100 flex max-w-3xl flex-col items-start'>
             <div className='flex animate-hero-slide-up-fade'>
-                <Text className='inline-flex h-6 select-none items-center rounded bg-[#fd54001e] px-2 text-xs font-semibold text-[#ff8c3ffa] text-[#ff8c3ffa]'>
+                <Text className='inline-flex h-6 select-none items-center rounded bg-[#fd54001e] px-2 text-xs font-semibold text-[#ff8c3ffa] dark:text-[#ff8c3ffa]'>
                     Currently in private beta
                 </Text>
             </div>
             <Title
                 className='mt-2 inline-block max-w-[525px] animate-hero-slide-up-fade bg-gradient-to-br from-foreground to-[#e7f3ff78] bg-clip-text
-                          align-top text-[35px] font-bold leading-[42px] tracking-[-0.64px] text-transparent dark:from-white sm:text-6xl sm:leading-[68px] sm:tracking-[-0.896px]'
+                          align-top text-[35px] font-bold leading-[42px] tracking-[-0.64px] text-transparent dark:from-white dark:text-transparent sm:text-6xl sm:leading-[68px] sm:tracking-[-0.896px]'
             >
                 The new email <br /> API for developers
             </Title>

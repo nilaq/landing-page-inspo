@@ -22,16 +22,12 @@ import { Input } from '~/components/ui/input'
 import Title from '~/components/ui/typography/Title'
 import Heading from '~/components/ui/typography/Heading'
 
-const RequestAccess = ({ buttonClassName }) => {
+const RequestAccessDialog = ({ children }) => {
     const requestAccessButton = (
         <div>
             <TooltipProvider>
                 <Tooltip>
-                    <TooltipTrigger asChild>
-                        <Button variant='glow' className={buttonClassName}>
-                            Request access
-                        </Button>
-                    </TooltipTrigger>
+                    <TooltipTrigger asChild>{children}</TooltipTrigger>
                     <TooltipContent variant='metal'>
                         <Text>Request Access</Text>
                         <Key char={'A'} />
@@ -88,4 +84,4 @@ const RequestAccess = ({ buttonClassName }) => {
     )
 }
 
-export default RequestAccess
+export default RequestAccessDialog

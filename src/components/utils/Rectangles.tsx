@@ -1,11 +1,16 @@
 import React from 'react'
+import { useDarkMode } from 'next-dark-mode'
 
 const Rectangles = ({ className }: { className: string }) => {
+    const { darkModeActive } = useDarkMode()
+
     const rectSize = 55
     const amountX = 20
     const amountY = 4
     const fill = [[5, 15], [4, 8, 13], [7, 10], []]
-    const fillColor = '#2CFFD1'
+    const fillColor = darkModeActive ? '#2CFFD1' : '#2368fc'
+    const fillOpacity = darkModeActive ? '0.4' : '0.9'
+    const strokeOpacity = darkModeActive ? '0.3' : '0.35'
 
     const generateRectPositions = (): {
         x: number
@@ -27,7 +32,7 @@ const Rectangles = ({ className }: { className: string }) => {
                 })
                 currentX += rectSize
             }
-            currentX = 0
+            currentX = 56.5
             currentY += rectSize
         }
 
@@ -63,9 +68,9 @@ const Rectangles = ({ className }: { className: string }) => {
                             width={rectSize}
                             height={rectSize}
                             fill={pos.fill}
-                            fillOpacity={0.2}
-                            stroke={'#00FEDC'}
-                            strokeOpacity={0.192}
+                            fillOpacity={fillOpacity}
+                            stroke={fillColor}
+                            strokeOpacity={strokeOpacity}
                         />
                     ))}
                 </g>
@@ -76,11 +81,11 @@ const Rectangles = ({ className }: { className: string }) => {
                         cy='0'
                         r='1'
                         gradientUnits='userSpaceOnUse'
-                        gradientTransform='translate(614 139.5) rotate(90.1317) scale(217.501 747.544)'
+                        gradientTransform='translate(650 139.5) rotate(90) scale(217.501 747.544)'
                     >
                         <stop stopColor='#D7D7D7' stopOpacity='0.2'></stop>
                         <stop
-                            offset='0.522644'
+                            offset='0.45'
                             stopColor='#D9D9D9'
                             stopOpacity='0'
                         ></stop>
