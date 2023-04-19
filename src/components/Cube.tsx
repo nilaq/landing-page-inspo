@@ -10,6 +10,7 @@ const Cube = () => {
         const canvas = canvasRef.current
 
         // start the application and load the scene
+        //@ts-ignore
         const spline = new Application(canvas)
         spline.load('https://resend.com/static/cube.splinecode')
 
