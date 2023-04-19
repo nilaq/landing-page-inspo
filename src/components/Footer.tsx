@@ -4,6 +4,7 @@ import { Button } from '~/components/ui/button'
 import { FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
+    //@ts-ignore
     const IconLink = ({ href, children }) => {
         return (
             <a
