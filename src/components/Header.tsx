@@ -15,7 +15,7 @@ import { useDarkMode } from 'next-dark-mode'
 const Header = () => {
     const { darkModeActive } = useDarkMode()
 
-    const key = char => {
+    function key(char: string) {
         return (
             <span
                 className='inline-flex h-[22px] w-[22px] select-none items-center justify-center rounded border bg-[#e2f0fd15] text-sm
