@@ -12,21 +12,22 @@ const buttonVariants = cva(
             variant: {
                 default:
                     'bg-primary text-primary-foreground hover:bg-primary/90',
+                secondary:
+                    'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+                accent: 'bg-accent text-accent-foreground hover:bg-accent/80',
                 destructive:
                     'bg-destructive text-destructive-foreground hover:bg-destructive/90',
                 outline:
-                    'border border-input hover:bg-accent hover:text-accent-foreground',
-                secondary:
-                    'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-                ghost: 'hover:bg-accent hover:text-accent-foreground',
+                    'border border-input hover:bg-muted hover:text-primary',
+                ghost: 'text-primary hover:bg-muted',
                 link: 'underline-offset-4 hover:underline text-primary',
+                nav: 'bg-transparent text-foreground hover:text-accent hover:font-bold transition-all duration-200 ease-in-out',
                 metal:
                     'bg-[#e2f0fd15] hover:bg-zinc-50 dark:hover:bg-[#dff3fd1c] border border-zinc-200 dark:border-[#dfeffe23] text-zinc-600 dark:text-resend-gray ' +
                     'focus:ring-[#e0f3ff2e] focus:bg-[#dfeffe23]',
                 glow:
                     'px-4 bg-white text-black hover:bg-white/90 focus:ring-white/20 focus:bg-white/90 disabled:hover:bg-white ' +
                     'drop-shadow-glow',
-                nav: 'bg-transparent text-foreground hover:text-foreground/70 dark:text-resend-gray dark:hover:text-resend-white',
             },
             size: {
                 default: 'h-10 py-2 px-4',

@@ -7,33 +7,33 @@
 @layer base {
     :root {
         --background: 0 0% 100%; /* white */
-        --foreground: 222.2 47.4% 11.2%; /* slate-900 */
+        --foreground: 240 5% 10%; /* zinc-900 */
 
-        --muted: 210 40% 96.1%; /* slate-100 */
-        --muted-foreground: 215.4 16.3% 46.9%; /* slate-500 */
+        --muted: 240 4% 95%; /* zinc-100 */
+        --muted-foreground: 240 3% 46%; /* zinc-500 */
 
         --popover: 0 0% 100%; /* white */
-        --popover-foreground: 222.2 47.4% 11.2%; /* slate-900 */
+        --popover-foreground: 240 5% 10%; /* zinc-900 */
 
-        --border: 214.3 31.8% 91.4%; /* slate-200 */
-        --input: 214.3 31.8% 91.4%; /* slate-200 */
+        --border: 240 5% 90%; /* zinc-200 */
+        --input: 240 5% 90%; /* zinc-200 */
 
         --card: 0 0% 100%; /* white */
-        --card-foreground: 222.2 47.4% 11.2%; /* slate-900 */
+        --card-foreground: 240 5% 10%; /* zinc-900 */
 
-        --primary: 222.2 47.4% 11.2%; /* slate-900 */
-        --primary-foreground: 210 40% 98%; /* slate-50 */
+        --primary: 240 5% 10%; /* zinc-900 */
+        --primary-foreground: 0 0% 98%; /* zinc-50 */
 
-        --secondary: 210 40% 96.1%; /* slate-100 */
-        --secondary-foreground: 222.2 47.4% 11.2%; /* slate-900 */
+        --secondary: 240 4% 95%; /* zinc-100 *//* duke blue instead of zinc-100 */
+        --secondary-foreground: 240 5% 10%; /* zinc-900 */
 
-        --accent: 210 40% 96.1%; /* slate-100 */
-        --accent-foreground: 222.2 47.4% 11.2%; /* slate-900 */
+        --accent: 240 100% 31%; /* duke blue instead of zinc-100 */
+        --accent-foreground: 240 4% 95%; /* zinc-100 */
 
         --destructive: 0 100% 50%; /* red */
-        --destructive-foreground: 210 40% 98%; /* slate-50 */
+        --destructive-foreground: 0 0% 98%; /* zinc-50 */
 
-        --ring: 215 20.2% 65.1%; /* slate-400 */
+        --ring: 240 5% 64%; /* zinc-400 */
 
         --radius: 0.5rem;
     }
